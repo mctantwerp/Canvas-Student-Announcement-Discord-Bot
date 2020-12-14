@@ -25,7 +25,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/NxT-Media-Technology/canvas-student-announcement-discord-bot">
     <img src="images/logo_canvas_student.png" width="80" height="80">
     <img src="images/arrow_right.png" width="80" height="80">
     <img src="images/logo_discord.png" width="80" height="80">
@@ -37,9 +37,9 @@
     A discord bot linked with the Canvas Student API dat gives the possibility to watch specific courses and embed posts when there are new announcements for these courses.
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/NxT-Media-Technology/canvas-student-announcement-discord-bot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/NxT-Media-Technology/canvas-student-announcement-discord-bot/issues">Request Feature</a>
   </p>
 </p>
 
