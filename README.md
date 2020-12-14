@@ -157,7 +157,7 @@ Before you can actually use your bot you'll have to fill in some parameters in t
 <!--MAKE YOUR OWN COMMAND? -->
 ## Make Your Own Command?
 
-In the Commands folder you will find a js file named [template.js](commands/template.js). If you want to make your own command just copy and past this file inside the commands folder.  
+In the Commands folder you will find a js file named [template.js](commands/template.js). If you want to make your own command just copy and paste this file inside the commands folder.  
 
 - `commands: ["template", "t"]` - Name and Alias Of your command.
 - `expectedArgs: ["<arg1> <arg2> <arg3>"]` - Expected arguments for your command.
