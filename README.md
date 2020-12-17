@@ -34,7 +34,7 @@
   <h3 align="center">Canvas Student Announcement Discord Bot</h3>
 
   <p align="center">
-    A discord bot linked with the Canvas Student API dat gives the possibility to watch specific courses and embed posts when there are new announcements for these courses.
+    A discord bot linked with the Canvas Student API that gives the possibility to watch specific courses and embed posts when there are new announcements for these courses.
     <br />
     <br />
     <a href="https://github.com/NxT-Media-Technology/canvas-student-announcement-discord-bot/issues">Report Bug</a>
