@@ -202,6 +202,7 @@ Wouter Thys - wouter.thys@student.kdg.be
 ## Acknowledgements
 
 * [Worn Off Keys](https://www.youtube.com/watch?v=gV4iltEdBs4&list=PLaxxQQak6D_fxb9_-YsmRwxfw5PH9xALe): An in-depth discord.js tutorial
+* [Worn Off Keys GitHub](https://github.com/AlexzanderFlores)
 * [DiscordJS Docs](https://discordjs.guide/)
 * [README Template](https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md) - Made By [Othneil Drew](https://github.com/othneildrew)
 
