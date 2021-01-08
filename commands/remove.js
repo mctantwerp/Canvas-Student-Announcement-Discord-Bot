@@ -10,7 +10,7 @@ module.exports = {
   minArgs: 1,
   maxArgs: 1,
   callback: (message, arguments, text) => {
-
+    console.log("Remove command executed! ")
     const content = arguments[0];
     const dbPath = path.resolve(__dirname, "db/memory.db");
 

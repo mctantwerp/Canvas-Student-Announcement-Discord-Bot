@@ -12,12 +12,12 @@ module.exports = {
   minArgs: 0,
   maxArgs: 1,
   callback: (message, arguments, text) => {
-    
+    console.log("courses command executed! ")
+
     let embededFields = 5;
     let page = Number(arguments[0]);
-    var bool = false;
     let skippedMsges = embededFields * page;
-    var bool = false;
+    
 
     //check if argument is a  number
     if (Number.isInteger(page) || arguments.length === 0) {

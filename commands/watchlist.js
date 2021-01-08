@@ -20,7 +20,7 @@ module.exports = {
   minArgs: 0,
   maxArgs: 0,
   callback: (message, arguments, text) => {
-
+    console.log("Watchlist command executed! ")
     const dbPath = path.resolve(__dirname, "db/memory.db");
     
     //api request get all courses because sqlite cant realy keep up 

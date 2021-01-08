@@ -7,7 +7,7 @@ module.exports = {
   maxArgs: 0,
 
   callback: async (message, arguments, text) => {
-    
+    console.log("Poll command executed! ")
     //add thumbs reaction to a posted message so it looks like a poll
     const addReactions = (message) => {
       

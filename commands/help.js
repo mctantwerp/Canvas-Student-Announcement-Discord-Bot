@@ -8,7 +8,7 @@ module.exports = {
   minArgs: 0,
   maxArgs: 0,
   callback: (message, arguments, text) => {
-
+    console.log("Help command executed! ")
     //simple help msg to show the available commands
     const embed = new Discord.MessageEmbed() // Ver 12.2.0 of Discord.js
       .setTitle("Canvas help")

@@ -22,6 +22,7 @@ module.exports = {
   maxArgs: 1,
   callback: (message, arguments, text) => {
     
+    console.log("AddCourse command executed! ")
     const content = Number(arguments[0]);
     const dbPath = path.resolve(__dirname, "db/memory.db");
 
