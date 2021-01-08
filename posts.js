@@ -33,9 +33,9 @@ module.exports = function () {
         });
 
         //get all available courses that can be watched for announcements
-        console.log();
+        console.log("Yeet");
         axios.get(urlCourses).then(function (response) {
-          
+        console.log("Yeet2");
             const data = response.data;
             const status = response.status;
             //check if request is oke  
