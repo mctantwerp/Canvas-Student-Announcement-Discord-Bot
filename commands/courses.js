@@ -12,7 +12,7 @@ module.exports = {
   minArgs: 0,
   maxArgs: 1,
   callback: (message, arguments, text) => {
-    console.log("courses command executed! ")
+    console.log("Courses command executed! ")
 
     let embededFields = 5;
     let page = Number(arguments[0]);

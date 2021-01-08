@@ -26,8 +26,9 @@ module.exports = {
     //api request get all courses because sqlite cant realy keep up 
     axios.get(urlCourses).then(function (response) {
       
-        const data = response.data;
-        const status = response.status;
+      const data = response.data;
+      const status = response.status;
+      console.log(data)
 
         if (status === 200) {
           let db = new sqlite3.Database(
