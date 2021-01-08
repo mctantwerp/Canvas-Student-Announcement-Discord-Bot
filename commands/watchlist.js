@@ -24,7 +24,7 @@ module.exports = {
     const dbPath = path.resolve(__dirname, "db/memory.db");
     
     //api request get all courses because sqlite cant realy keep up 
-    axios.get(urlCourses, { headers: meta }).then(function (response) {
+    axios.get(urlCourses).then(function (response) {
       
         const data = response.data;
         const status = response.status;

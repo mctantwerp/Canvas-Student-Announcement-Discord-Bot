@@ -14,7 +14,7 @@ module.exports = (client, courseAnn) => {
   const dbPath = path.resolve(__dirname, "./commands/db/memory.db");
 
   //Api request to get announcements
-  axios.get(courseAnn, { headers: meta }).then(function (response) {
+  axios.get(courseAnn, /*{ headers: meta }*/).then(function (response) {
 
     const data = response.data;
     const status = response.status;

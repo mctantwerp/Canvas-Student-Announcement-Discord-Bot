@@ -33,11 +33,11 @@ module.exports = function () {
         });
 
         //get all available courses that can be watched for announcements
-        axios.get(urlCourses, { headers: meta }).then(function (response) {
+        console.log();
+        axios.get(urlCourses).then(function (response) {
           
             const data = response.data;
             const status = response.status;
-
             //check if request is oke  
             if (status === 200) {
               db.serialize(() => {

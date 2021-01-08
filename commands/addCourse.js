@@ -28,12 +28,12 @@ module.exports = {
     if (Number.isInteger(content)) {
 
     //api request to get the course that is entered in as argument and enter it tp the table watchlist with the channel id
-    axios.get(urlCourse + JSON.stringify(content), { headers: meta }).then(function (response) {
+    axios.get(urlCourse).then(function (response) {
       
-        const data = response.data;
+        const data = response.data[0];
         const status = response.status;
 
-        console.log(data.id);
+        console.log(data);
         console.log(message.channel.id);
         console.log(status);
       
