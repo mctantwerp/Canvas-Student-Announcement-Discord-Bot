@@ -85,21 +85,21 @@ module.exports = {
           });
 
           // close the database connection
-          db.close((err) => {
-            if (err) {
-
-              return console.error(err.message);
-
-            }
-
-            console.log("Close the database connection.");
-
-          });
         }
       })
       .catch(function (error) {
 
         console.log(error);
+
+      });
+      db.close((err) => {
+        if (err) {
+
+          return console.error(err.message);
+
+        }
+
+        console.log("Close the database connection.");
 
       });
   },
