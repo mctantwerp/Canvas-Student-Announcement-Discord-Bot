@@ -112,10 +112,21 @@ module.exports = (client, courseAnn) => {
                     console.log("Your records had been pushed to the DB succesfully!");
 
                   };
+                  
               }
             });
           });
         });
+      });
+      db.close((err) => {
+        if (err) {
+
+          return console.error(err.message);
+          
+        }
+
+        console.log("Close the database connection.");
+
       });
     }
   });
