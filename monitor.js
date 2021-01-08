@@ -10,7 +10,6 @@ const meta = {
 };
 
 module.exports = (client, courseAnn) => {
-  
   const dbPath = path.resolve(__dirname, "./commands/db/memory.db");
 
   //Api request to get announcements

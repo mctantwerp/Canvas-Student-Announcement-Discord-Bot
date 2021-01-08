@@ -28,15 +28,16 @@ module.exports = {
     if (Number.isInteger(content)) {
 
     //api request to get the course that is entered in as argument and enter it tp the table watchlist with the channel id
-    axios.get(urlCourse).then(function (response) {
+
+    axios.get(urlCourse.replace('[courseid]', JSON.stringify(content))).then(function (response) {
       
-        const data = response.data[0];
+        const data = response.data;
         const status = response.status;
 
         console.log(data);
         console.log(message.channel.id);
         console.log(status);
-      
+            
         //check if request is oke
         if (status === 200) {
           //return confirmation that cours is added to watchlist
@@ -83,6 +84,7 @@ module.exports = {
 
           });
         }
+
       })
       .catch(function (error) {
         

@@ -73,9 +73,8 @@ client.on("ready", () => {
 
         row.forEach((element) => {
           //if(!isNaN(element)){
-            let annURL = process.env.CANVAS_API_ANN_URL.replace(/[courseid]]/g, element.course_id)
-            console.log(annURL);
-            monitor(client, annURL);
+            let annURL = process.env.CANVAS_API_ANN_URL;
+            monitor(client, annURL.replace('[courseid]', element.course_id));
           //}
           
         });
