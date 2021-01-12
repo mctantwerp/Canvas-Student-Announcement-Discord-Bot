@@ -95,9 +95,10 @@ module.exports = (client, courseAnn) => {
                     row.forEach((record) => {
                       if (ann.context_code.replace("course_", "") === JSON.stringify(record.course_id)) {
                         
-                        channel = client.channels.cache.get(record.channel_id).then(
+                        /* channel = client.channels.cache.get(record.channel_id).then(
                           channel.send(exampleEmbed)
-                        )
+                        ) */
+                        client.channels.fetch(record.channel_id).then(channel => { console.log(channel) });
 
                       }
                     });
