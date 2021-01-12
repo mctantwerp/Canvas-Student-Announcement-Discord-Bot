@@ -43,10 +43,10 @@ module.exports = (client, courseAnn) => {
 
           //Loop trough dtabase with course with all the API GET results to post on the right channel
           rev.forEach((ann) => {
-            console.log(ann.context_code, ann.posted_at)
+
             row.forEach((course) => {
               if (ann.context_code.replace("course_", "") === JSON.stringify(course.course_id) && course.posted_at < ann.posted_at) {
-                console.log(course)
+
                 
                 //Replace default markup html tags of canvas by discord embed syntax
                 var message = ann.message
@@ -82,7 +82,7 @@ module.exports = (client, courseAnn) => {
                     "NxT Media Technology",
                     "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s180"
                   );
-                  console.log('Posted');
+
                 db.all(
                   `SELECT course_id, channel_id FROM watchlist;`,
                   (err, row) => {
@@ -91,12 +91,12 @@ module.exports = (client, courseAnn) => {
                       console.error(err.message);
 
                     }
-                    console.log(row);
+
                     row.forEach((record) => {
                       if (ann.context_code.replace("course_", "") === JSON.stringify(record.course_id)) {
                         
                         channel = client.channels.cache.get(record.channel_id);
-                        console.log(channel);
+                        
                         channel.send(exampleEmbed);
 
                       }
