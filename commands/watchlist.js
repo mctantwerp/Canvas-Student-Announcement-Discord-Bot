@@ -28,7 +28,7 @@ module.exports = {
       
       const data = response.data;
       const status = response.status;
-      console.log(data)
+      //console.log(data)
 
         if (status === 200) {
           let db = new sqlite3.Database(

@@ -80,7 +80,7 @@ module.exports = (client, courseAnn) => {
                     "NxT Media Technology",
                     "https://play-lh.googleusercontent.com/2_M-EEPXb2xTMQSTZpSUefHR3TjgOCsawM3pjVG47jI-BrHoXGhKBpdEHeLElT95060B=s180"
                   );
-
+                  console.log('Posted');
                 db.all(
                   `SELECT course_id, channel_id FROM watchlist;`,
                   (err, row) => {
@@ -89,7 +89,8 @@ module.exports = (client, courseAnn) => {
                       console.error(err.message);
 
                     }
-
+                    
+                    console.log('Posted Row');
                     row.forEach((record) => {
                       if (ann.context_code.replace("course_", "") === JSON.stringify(record.course_id)) {
 
@@ -117,16 +118,6 @@ module.exports = (client, courseAnn) => {
             });
           });
         });
-      });
-      db.close((err) => {
-        if (err) {
-
-          return console.error(err.message);
-          
-        }
-
-        console.log("Close the database connection.");
-
       });
     }
   });

@@ -35,9 +35,9 @@ module.exports = {
         const data = response.data;
         const status = response.status;
 
-        console.log(data);
-        console.log(message.channel.id);
-        console.log(status);
+        //console.log(data);
+        //console.log(message.channel.id);
+        //console.log(status);
             
         //check if request is oke
         if (status === 200) {
