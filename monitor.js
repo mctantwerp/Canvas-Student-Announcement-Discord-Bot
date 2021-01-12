@@ -43,8 +43,10 @@ module.exports = (client, courseAnn) => {
 
           //Loop trough dtabase with course with all the API GET results to post on the right channel
           rev.forEach((ann) => {
+            console.log(ann.context_code, ann.posted_at)
             row.forEach((course) => {
               if (ann.context_code.replace("course_", "") === JSON.stringify(course.course_id) && course.posted_at < ann.posted_at) {
+                console.log(course)
                 
                 //Replace default markup html tags of canvas by discord embed syntax
                 var message = ann.message
@@ -64,7 +66,7 @@ module.exports = (client, courseAnn) => {
                   .setURL(ann.url)
                   .setAuthor(
                     ann.author.display_name,
-                    ann.author.avatar_image_url,
+                    ann.author.avatar_image_url, 
                     ann.author.html_url
                   )
                   .setDescription(message.substring(0, 200))
@@ -89,12 +91,12 @@ module.exports = (client, courseAnn) => {
                       console.error(err.message);
 
                     }
-                    
-                    console.log('Posted Row');
+                    console.log(row);
                     row.forEach((record) => {
                       if (ann.context_code.replace("course_", "") === JSON.stringify(record.course_id)) {
-
+                        
                         channel = client.channels.cache.get(record.channel_id);
+                        console.log(channel);
                         channel.send(exampleEmbed);
 
                       }
