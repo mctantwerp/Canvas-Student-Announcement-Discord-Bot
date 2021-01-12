@@ -98,7 +98,7 @@ module.exports = (client, courseAnn) => {
                         /* channel = client.channels.cache.get(record.channel_id).then(
                           channel.send(exampleEmbed)
                         ) */
-                        client.channels.fetch(record.channel_id).then(channel => { channel.send(exampleEmbed) });
+                        client.channels.fetch(record.channel_id).then(channel => { channel.send(exampleEmbed) }).catch(error => { console.log(error) });;
 
                       }
                     });
