@@ -192,9 +192,9 @@ Distributed under the Apache License. See `LICENSE`for more information.
 <!-- CONTACT -->
 ## Contact
 
-Noah Gillard - [LinkedIn](https://www.linkedin.com/in/noah-gillard-b47246175/) - [Twitter](https://twitter.com/NoahGillard1) - [Mail](noah.gillard@student.kdg.be)
+Noah Gillard - [LinkedIn](https://www.linkedin.com/in/noah-gillard-b47246175/) - [Twitter](https://twitter.com/NoahGillard1) - noah.gillard@student.kdg.be
 
-Wouter Thys - [Mail](wouter.thys@student.kdg.be)
+Wouter Thys - [LinkedIn](https://www.linkedin.com/in/wouter-thys-751563200/) - wouter.thys@student.kdg.be
 
 
 
