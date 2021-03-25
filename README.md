@@ -194,7 +194,7 @@ Distributed under the Apache License. See `LICENSE`for more information.
 
 Noah Gillard - [LinkedIn](https://www.linkedin.com/in/noah-gillard-b47246175/) - [Twitter](https://twitter.com/NoahGillard1) - [Mail](noah.gillard@student.kdg.be)
 
-Wouter Thys - wouter.thys@student.kdg.be
+Wouter Thys - [Mail](wouter.thys@student.kdg.be)
 
 
 
