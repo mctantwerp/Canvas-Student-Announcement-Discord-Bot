@@ -99,7 +99,7 @@ To get up and running follow these simple steps.
 
 ### Prerequisites
 
-* Download/Install the latest version of NodeJS (Includes NPM)
+* Download/Install the latest version of NodeJS (Be sure that you download Node V12) (Includes NPM)
   ```sh
   https://nodejs.org/en/
   ```
