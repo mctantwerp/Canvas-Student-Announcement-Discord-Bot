@@ -168,6 +168,9 @@ In the Commands folder you will find a js file named [template.js](commands/temp
 - `permissions: []` - Only allows users with certain permission to run this command. Example: `permissions: ["ADMINISTRATOR"]`-> This wil only allow server admins.
 - `requiredRoles: []` - Only allows users with certain roles to run this command. Example: `requiredRoles: ["Ping"]`-> This wil only allow users with role Ping.
 
+<!-- Add bot to server -->
+## Add bot to server
+https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
 
 <!-- CONTRIBUTING -->
 ## Contributing
