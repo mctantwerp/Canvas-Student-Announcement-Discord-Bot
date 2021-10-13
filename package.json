@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "axios": "^0.21.1",
+        "axios": "^0.21.2",
         "discord.js": "^12.5.1",
         "discord.js-pagination": "^1.0.3",
         "dotenv": "^8.2.0",
